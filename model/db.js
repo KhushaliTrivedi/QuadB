@@ -1,6 +1,6 @@
 const {Client} = require('pg');
 
-const client = new Client('postgres://quadb_user:h0zZgfLQzPyVnRi6oEYsNI48WNF4HViZ@dpg-cgn5qvndvk4k0101cbj0-a/quadb?ssl=true');
+const client = new Client(process.env.DB_URL);
 
 client.connect();
 
